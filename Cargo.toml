@@ -1,0 +1,19 @@
+[package]
+name = "vendor-tower"
+version = "0.1.0"
+authors = ["Carl Lerche <me@carllerche.com>"]
+
+[dependencies]
+tower = { path = "tower" }
+tower-grpc = { path = "tower-grpc" }
+tower-h2 = { path = "tower-h2" }
+
+[patch."https://github.com/tower-rs/tower"]
+tower = { path = "tower" }
+tower-ready-service = { path = "tower/tower-ready-service" }
+
+[patch."https://github.com/tower-rs/tower-h2"]
+tower-h2 = { path = "tower-h2" }
+
+[patch."https://github.com/tower-rs/tower-grpc"]
+tower-grpc = { path = "tower-grpc" }

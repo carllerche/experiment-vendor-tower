@@ -1,0 +1,9 @@
+[submodule "tower"]
+	path = tower
+	url = https://github.com/tower-rs/tower
+[submodule "tower-grpc"]
+	path = tower-grpc
+	url = https://github.com/tower-rs/tower-grpc
+[submodule "tower-h2"]
+	path = tower-h2
+	url = https://github.com/tower-rs/tower-h2
